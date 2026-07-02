@@ -49,7 +49,9 @@ python catvending.py
 # How it works
 **State-locked debouncing**
 - To protect the rendering loop from input spamming the machine, the handler uses a boolean flag (self.is_shaking) as a lock. When a dispense sequence runs, subsequent inputs are intercepted and dropped, preventing overlapping animations.
+
 **Window lifecycles**
-  - Instead of hiding a pre-loaded window, the app instantiates a tk.Toplevel frame. This window's lifecycle is managed via the event loop using .after() callbacks. When dismissed, the app cancels pending timers and calls .destroy(), freeing memory to avoid resource leaks.
+- Instead of hiding a pre-loaded window, the app instantiates a tk.Toplevel frame. This window's lifecycle is managed via the event loop using .after() callbacks. When dismissed, the app cancels pending timers and calls .destroy(), freeing memory to avoid resource leaks.
+
 **Error and bug catching**
 - The asset loader scans the directory and filters filenames against an extension list. If the folder is empty or missing, a try-except blcok catche sthe error and falls back to a default text UI so the app doesn't crash.
