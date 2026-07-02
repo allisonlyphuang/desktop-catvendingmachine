@@ -6,7 +6,7 @@ Crammed as a last-minute birthday gift for a friend, because I'm such a good per
 <img width="579" height="331" alt="catvending_demo" src="https://github.com/user-attachments/assets/5bb65166-dca8-48dc-b2de-04166c70658e" />
 
 
-# Quick Start
+# ⭐ Quick Start
 Have python and want to run it now? Copy, paste, and run:
 
 ```
@@ -16,13 +16,13 @@ python catvending.py
 
 Make sure the terminal is open inside the project folder where vendingMachine.png and cat_library live.
 
-# Features
-- Interactive dispense animation: left-clicking the machine triggers a vending-machine style shake before dispensing out a cat.
-- Customization: pulls randomized images from the local cat_library folder: feel free to add more cats or replace with other images.
-- Auto-dismiss timer: Stays pinned above your IDE, browser, or games so the desktop companion is always visible.
+# 🔎 Features
+- **Interactive dispense animation:** left-clicking the machine triggers a vending-machine style shake before dispensing out a cat.
+- **Customization:** pulls randomized images from the local cat_library folder: feel free to add more cats or replace with other images.
+- **Auto-dismiss timer:** Stays pinned above your IDE, browser, or games so the desktop companion is always visible.
 - Uses custom canvas backgruond stripping to look like a floating asset rather than an app window.
 
-# How to Run it Locally
+# 💻 How to Run it Locally
 ## Prerequisites
 - Python 3.8 or higher
 - Dependencies: Pillow for advanced image resizing and rendering
@@ -41,12 +41,12 @@ Make sure the terminal is open inside the project folder where vendingMachine.pn
 python catvending.py
 ```
 
-# Controls
+# 🎮 Controls
 - Left click machine to dispense a new cat
 - Left click cat to dismiss the cat
 - Right click machine to kill the application
 
-# How it works
+# ⚙️ How it works
 **State-locked debouncing**
 - To protect the rendering loop from input spamming the machine, the handler uses a boolean flag (self.is_shaking) as a lock. When a dispense sequence runs, subsequent inputs are intercepted and dropped, preventing overlapping animations.
 
